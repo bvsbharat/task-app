@@ -18,6 +18,7 @@ module.exports = withFonts(
             },
           });
           config.resolve.modules.push(path.resolve("./"));
+
           return config;
         },
       })

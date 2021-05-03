@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  min-height: 100vh;
+  margin: 0 15px;
+  position: relative; }
+  @media (min-width: 768px) {
+    body {
+      margin: 0 20px; } }
+  body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffafbd;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #ffafbd);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #ffafbd);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(/_next/static/images/b8-8fc8dc634f76d931b08380c7926ef8d4.jpg);
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px); }
+
+.weather-app {
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+
