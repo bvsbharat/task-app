@@ -7,7 +7,7 @@ export const TOGGLE_TEMP = "TOGGLE_TEMP";
 
 const key = "82bc0d2d2aa2db497547b0da40fb0dcf"; //process.env.REACT_APP_API_KEY;
 const lang = "en";
-const forecast = "//api.openweathermap.org/data/2.5/onecall";
+const forecast = "https://api.openweathermap.org/data/2.5/onecall";
 
 export const getData = (options) => async (dispatch) => {
   const { unit, query } = options;
@@ -19,7 +19,7 @@ export const getData = (options) => async (dispatch) => {
     lon: 11,
   };
 
-  const geoCode = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&&limit=1&appid=${key}`;
+  const geoCode = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&&limit=1&appid=${key}`;
 
   try {
     const geocode = await axios.get(geoCode);
@@ -53,7 +53,7 @@ export const toggleTemp = (options) => async (dispatch) => {
     lon: 11,
   };
 
-  const geoCode = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&&limit=1&appid=${key}`;
+  const geoCode = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&&limit=1&appid=${key}`;
 
   try {
     const geocode = await axios.get(geoCode);
