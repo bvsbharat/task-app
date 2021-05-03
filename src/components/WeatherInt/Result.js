@@ -18,6 +18,11 @@ const Results = styled.div`
   visibility: hidden;
   position: relative;
   top: 20px;
+  background: rgb(0 0 0 / 23%);
+  margin-top: 50px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   animation: ${ResultFadeIn} 0.5s 1.4s forwards;
 `;
 
@@ -65,7 +70,7 @@ const Result = ({ weather }) => {
     <Results>
       <CurrentWeather weather={current} unitsLabels={getUnitTypes(unitType)} />
       <ForecastWrapper>
-        <MediumLabel weight="800">Forecast</MediumLabel>
+        <MediumLabel weight="200"> Next 7 Day's Forecast</MediumLabel>
         <Forecast>{forecasts}</Forecast>
       </ForecastWrapper>
     </Results>

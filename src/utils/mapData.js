@@ -6,7 +6,7 @@ const formatDate = (dte, lang) => {
     dayjs.locale(lang.replace("_", "-"));
   }
   if (dte && dayjs().isValid(dte)) {
-    return dayjs.unix(dte).format("ddd D MMMM");
+    return dayjs.unix(dte).format("ddd D MMMM YYYY");
   }
   return "";
 };

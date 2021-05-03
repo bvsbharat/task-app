@@ -25,7 +25,7 @@ body {
     background: linear-gradient(to right, #ffc3a0, #ffafbd);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url(/_next/static/images/b8-8fc8dc634f76d931b08380c7926ef8d4.jpg);
-    background-color: red;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
